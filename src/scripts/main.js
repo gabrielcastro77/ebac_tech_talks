@@ -9,9 +9,9 @@ const contaAsHoras = setInterval(function() {
 
     const distanciaAteOEvento = timeStampDoEvento - timeStampAtual;
 
-    const diaEmMs = 1000 * 60 * 60 * 24; // segundos > minutos > hora > dia (em milissegundos)S
-    const horaEmMs = 1000 * 60 * 60
-    const minutoEmMs = 1000 * 60
+    const diaEmMs = 1000 * 60 * 60 * 24; // segundos > minutos > hora > dia (em milissegundos)S // quantos dias eu quero em milissegundos
+    const horaEmMs = 1000 * 60 * 60 // quantas horas eu quero em milissegundos
+    const minutoEmMs = 1000 * 60 // quantos minutos eu quero em milissegundos
 
     const diasAteOEvento = Math.floor(distanciaAteOEvento / diaEmMs);
     const horasAteOEvento = Math.floor((distanciaAteOEvento % diaEmMs) / horaEmMs);
